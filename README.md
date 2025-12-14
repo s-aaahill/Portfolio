@@ -30,3 +30,6 @@ If you have Python installed, you can run a local server:
    python -m http.server
    ```
 3. Open `http://localhost:8000` in your browser
+
+### Option 4: Live Link
+https://portfolio-chi-weld-p36o7teayu.vercel.app/
