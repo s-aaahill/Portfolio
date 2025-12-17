@@ -1,0 +1,42 @@
+name: Portfolio CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Build, Test & Deploy Portfolio to AWS S3
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout latest code
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Validate required website files
+      - name: Validate website files
+        run: |
+          test -f index.html || (echo "❌ index.html missing" && exit 1)
+          test -f style.css || (echo "❌ style.css missing" && exit 1)
+          test -f script.js || (echo "❌ script.js missing" && exit 1)
+          echo "✅ All required files are present."
+
+      # Step 3: Configure AWS credentials securely
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-south-1
+
+      # Step 4: Deploy website to S3
+      - name: Deploy to AWS S3
+        run: |
+          aws s3 sync . s3://${{ secrets.AWS_S3_BUCKET_NAME }} \
+            --exclude ".git/*" \
+            --exclude ".github/*" \
+            --exclude "*.yml" \
+            --delete
+          echo "🚀 Portfolio deployed successfully!"
