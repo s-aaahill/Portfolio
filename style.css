@@ -120,6 +120,20 @@ body {
     text-align: left;
 }
 
+@media (max-width: 900px) {
+
+.hero {
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 220px;
+    height: 220px;
+}
+
+}
+
 .greeting {
     font-family: var(--font-mono);
     color: var(--accent-secondary);
