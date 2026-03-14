@@ -138,6 +138,17 @@ body {
 
 }
 
+.resume-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.resume-link:hover {
+    color: var(--accent-primary);
+}
+
 .greeting {
     font-family: var(--font-mono);
     color: var(--accent-secondary);
