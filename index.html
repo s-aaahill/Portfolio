@@ -36,7 +36,7 @@
         <section id="hero" class="hero">
             <div class="hero-content">
                 <span class="greeting">Hello, I'm</span>
-                <h1 class="name">Sahil Shaikh</h1>
+                <a href="images/resume.pdf" download="My_Resume.pdf" class="resume-link"><h1 class="name">Sahil Shaikh</h1></a>
                 <h2 class="role">Software Developer <span class="accent">&</span> CS Student</h2>
                 <p class="bio">Building high-performance systems and dynamic web experiences. Passionate about Operating
                     Systems, C++, and Full Stack Development.</p>
@@ -49,6 +49,16 @@
                     <a href="https://github.com/s-aaahill" target="_blank" aria-label="GitHub">GitHub</a>
                     <a href="mailto:sahilshaikh2662@gmail.com" aria-label="Email">Email</a>
                 </div>
+            </div>
+            <div class="hero-image">
+                <a href="images/resume.pdf" download="My_Resume.pdf" class="resume-link">
+                <img src="images/Profile.jpg" alt="Profile Picture">
+                </a>
+            </div>
+            <!-- Floating Particles -->
+            <div class="particles">
+                <span></span><span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
             </div>
         </section>
 
@@ -64,106 +74,190 @@
             </div>
         </section>
 
-        <section id="skills" class="section">
-            <h2 class="section-title">Technical Arsenal</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <div class="tags">
-                        <span>C</span><span>C++</span><span>C#</span><span>Java</span>
-                        <span>Python3</span><span>JavaScript</span><span>TypeScript</span><span>Assembly</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks & Libs</h3>
-                    <div class="tags">
-                        <span>Node.js</span><span>React</span><span>Express</span><span>Flask</span>
-                        <span>Django</span><span>Pandas</span><span>NumPy</span><span>Scikit-Learn</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <div class="tags">
-                        <span>AWS</span><span>MongoDB</span><span>IBM Cloud</span><span>Git/GitHub</span>
-                        <span>Linux</span><span>Docker</span>
-                    </div>
+<section id="skills" class="section" data-aos="fade-up">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-category">
+            <div class="skill-inner">
+                <h3>Languages</h3>
+                <div class="tags">
+                    <span>C</span>
+                    <span>C++</span>
+                    <span>C#</span>
+                    <span>Java</span>
+                    <span>Python3</span>
+                    <span>JavaScript</span>
+                    <span>Assembly</span>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="projects" class="section">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>FloppyOS</h3>
-                        <span class="project-type">Hobby Operating System</span>
-                    </div>
-                    <p>A custom 32-bit operating system with a GUI, memory management, and filesystem drivers built from
-                        scratch.</p>
-                    <div class="tech-stack">
-                        <span>C</span><span>Assembly</span><span>QEMU</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/s-aaahill/FloppyOS.git" target="_blank">GitHub</a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>LAN Chat App</h3>
-                        <span class="project-type">Networking</span>
-                    </div>
-                    <p>Real-time LAN chat application using TCP/IP socket programming with multithreading support.</p>
-                    <div class="tech-stack">
-                        <span>C++</span><span>Socket API</span><span>Multithreading</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/s-aaahill/C-LAN-Chat-Application.git" target="_blank">GitHub</a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>MERN Chat App</h3>
-                        <span class="project-type">Full Stack</span>
-                    </div>
-                    <p>Full-stack chat application with user authentication and MongoDB storage, deployed on Render.</p>
-                    <div class="tech-stack">
-                        <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/s-aaahill/Chat-App-Frontend.git" target="_blank">GitHub</a>
-                        <a href="https://chat-app-frontend-ljur.onrender.com" target="_blank">Live Demo</a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Crime Analysis</h3>
-                        <span class="project-type">Data Science</span>
-                    </div>
-                    <p>Analyzed LAPD crime data (2020-2024) to identify trends using Python and visualization libraries.
-                    </p>
-                    <div class="tech-stack">
-                        <span>Python</span><span>Pandas</span><span>Seaborn</span><span>Matplotlib</span>
-                    </div>
-                </article>
+        <div class="skill-category">
+            <div class="skill-inner">
+                <h3>Frameworks & Libraries</h3>
+                <div class="tags">
+                    <span>Node.js</span>
+                    <span>Flask</span>
+                    <span>Django</span>
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>Scikit-Learn</span>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <section id="education" class="section">
+        <div class="skill-category">
+            <div class="skill-inner">
+                <h3>Tools & Platforms</h3>
+                <div class="tags">
+                    <span>AWS</span>
+                    <span>MongoDB</span>
+                    <span>IBM Cloud</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Linux</span>
+                    <span>Docker</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+        <section id="projects" class="section" data-aos="fade-up">
+    <div id="starry-bg"></div>
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="projects-grid">
+
+        <article class="project-card" data-aos="zoom-in">
+            <div class="project-header">
+                <h3>FloppyOS</h3>
+                <span class="project-type">Operating System</span>
+            </div>
+            <p>
+                Experimental 32-bit x86 hobby operating system built from scratch, implementing a basic kernel,
+                bootloader, memory management concepts, and early GUI experiments running inside an emulator.
+            </p>
+            <div class="tech-stack">
+                <span>C</span>
+                <span>x86 Assembly</span>
+                <span>QEMU Emulator</span>
+                <span>Low-Level Systems Programming</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/s-aaahill/FloppyOS.git" target="_blank">GitHub</a>
+            </div>
+        </article>
+
+
+        <article class="project-card" data-aos="zoom-in">
+            <div class="project-header">
+                <h3>Dockerized TCP Chat Server</h3>
+                <span class="project-type">Networking / Systems</span>
+            </div>
+            <p>
+                Multi-client LAN chat server built using low-level TCP sockets in C++, supporting concurrent
+                connections via multithreading, user session handling, and containerized deployment using Docker.
+            </p>
+            <div class="tech-stack">
+                <span>C++</span>
+                <span>POSIX TCP/IP Sockets</span>
+                <span>Multithreading</span>
+                <span>Docker Containerization</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/s-aaahill/C-LAN-Chat-Application" target="_blank">GitHub</a>
+            </div>
+        </article>
+
+
+        <article class="project-card" data-aos="zoom-in">
+            <div class="project-header">
+                <h3>AWS CI/CD Portfolio Deployment</h3>
+                <span class="project-type">DevOps / Cloud</span>
+            </div>
+            <p>
+                Automated CI/CD pipeline that deploys a static portfolio website to AWS infrastructure.
+                GitHub Actions validates and pushes builds to Amazon S3 with secure IAM credentials and
+                distributes content globally using CloudFront.
+            </p>
+            <div class="tech-stack">
+                <span>AWS S3 Hosting</span>
+                <span>GitHub Actions CI/CD</span>
+                <span>AWS IAM Security</span>
+                <span>AWS CLI Automation</span>
+                <span>CloudFront CDN</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/s-aaahill/Portfolio.git" target="_blank">GitHub</a>
+                <a href="https://d210zsho08hcl6.cloudfront.net/" target="_blank">Live</a>
+            </div>
+        </article>
+
+
+        <article class="project-card" data-aos="zoom-in">
+            <div class="project-header">
+                <h3>MERN Chat App</h3>
+                <span class="project-type">Full Stack Web App</span>
+            </div>
+            <p>
+                Real-time full-stack chat application with authentication, REST APIs, and persistent
+                message storage using MongoDB, built with the MERN stack and deployed to cloud hosting.
+            </p>
+            <div class="tech-stack">
+                <span>MongoDB Database</span>
+                <span>Express Backend API</span>
+                <span>React Frontend</span>
+                <span>Node.js Runtime</span>
+            </div>
+            <div class="project-links">
+                <a href="https://chat-app-frontend-ljur.onrender.com" target="_blank">Live Demo</a>
+                <a href="https://github.com/s-aaahill/Chat-App-Frontend.git" target="_blank">GitHub</a>
+            </div>
+        </article>
+
+
+        <article class="project-card" data-aos="zoom-in">
+            <div class="project-header">
+                <h3>Classic Games Collection</h3>
+                <span class="project-type">Game Development</span>
+            </div>
+            <p>
+                Implemented classic desktop games including Snake, Minesweeper, and Tic-Tac-Toe using
+                C++ and the SFML graphics library, focusing on real-time rendering, game loops,
+                event handling, and responsive controls.
+            </p>
+            <div class="tech-stack">
+                <span>C++</span>
+                <span>SFML Graphics Library</span>
+                <span>Game Loop Architecture</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/s-aaahill/Snake.git" target="_blank">Snake</a>
+                <a href="https://github.com/s-aaahill/Minesweeper.git" target="_blank">Minesweeper</a>
+                <a href="https://github.com/s-aaahill/Tic-Tac-Toe.git" target="_blank">Tic-Tac-Toe</a>
+            </div>
+        </article>
+
+        <div id="starry-bg"></div>
+    </div>
+</section>
+        <section id="education" class="section" data-aos="fade-up">
             <h2 class="section-title">Education</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <span class="date">Aug 2023 - Present</span>
                     <h3>B.Tech, Computer Science & Engineering</h3>
-                    <p>Lovely Professional University, Punjab | CGPA: 7.0</p>
+                    <p>Lovely Professional University, Jalandhar | CGPA: 7.1</p>
                 </div>
                 <div class="timeline-item">
                     <span class="date">Jun 2021 - Mar 2023</span>
                     <h3>Intermediate (HSC)</h3>
-                    <p>Jai Hind Jr. College, Mumbai | 62%</p>
+                    <p>Jai Hind Jr. College, Mumbai | 61.6%</p>
                 </div>
                 <div class="timeline-item">
                     <span class="date">Mar 2021</span>
@@ -176,11 +270,27 @@
         <section id="certifications" class="section">
             <h2 class="section-title">Certifications</h2>
             <ul class="cert-list">
-                <li>Generative AI - Google (Dec 2023)</li>
-                <li>Cybersecurity - University of Maryland (Apr 2024)</li>
-                <li>TCP/IP and Advanced Topics - UCS (Nov 2024)</li>
-                <li>Packet Switching Networks - UCS (Nov 2024)</li>
-                <li>Cloud Computing in AWS - CipherSchools (Jul 2025)</li>
+                <a href="https://coursera.org/share/cf12ecb23389fed3596e6ac7b80412af">
+                    <li>Generative AI - Google (Feb 2024)</li>
+                </a>
+                <a href="https://coursera.org/share/582b7bbd28ac8d8ae8314c64caed73d9">
+                    <li>Cybersecurity - University of Maryland (Feb 2024)</li>
+                </a>
+                <a href="https://coursera.org/share/7edfd75bacf49af6b2b4b465876431af">
+                    <li>Introduction to Cloud Computing - IBM (Mar 2024)</li>
+                </a>
+                <a href="https://coursera.org/share/87829ba57594b9d2397a0262b13103a2">
+                    <li>TCP/IP and Advanced Topics - UCS (Nov 2024)</li>
+                </a>
+                <a href="https://coursera.org/share/bfe4bdd142b3f39ce168214195f49c28">
+                    <li>Packet Switching Networks - UCS (Nov 2024)</li>
+                </a>
+                <a href="https://coursera.org/share/bfb73ad3a58de16042ed4c01531e3e73">
+                    <li>Introduction to Hardware and Operating Systems - IBM (Sep 2024)</li>
+                </a>
+                <a href="https://www.cipherschools.com/certificate/preview?id=687e003f3eaa79325b2d2d7a">
+                    <li>Cloud Computing in AWS - CipherSchools (Jul 2025)</li>
+                </a>
             </ul>
         </section>
 
