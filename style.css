@@ -850,13 +850,18 @@ footer {
 }
 
 .game-card {
-  border: 1px solid #ccc;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 10px;
-  transition: 0.3s;
+    background: rgba(124,77,255,0.12);
+    border: 1px solid rgba(124,77,255,0.35);
+    color: var(--accent-secondary);
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    transition: all 0.25s ease;
 }
 
 .game-card:hover {
-  transform: scale(1.05);
+    background: var(--gradient-main);
+    color: white;
+    transform: translateY(-2px);
 }
