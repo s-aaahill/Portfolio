@@ -848,3 +848,15 @@ footer {
     color: white;
     transform: translateY(-2px);
 }
+
+.game-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
